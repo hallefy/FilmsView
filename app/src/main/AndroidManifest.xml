@@ -3,15 +3,17 @@
     package="com.ferreira.hallefy.filmsview">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_film"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity_main">
+        <activity android:name=".views.activity_main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,8 +21,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity_details"
-            android:parentActivityName=".activity_main">
+            android:label="Detalhes"
+            android:name=".views.activity_details"
+            android:parentActivityName=".views.activity_main">
         </activity>
     </application>
 

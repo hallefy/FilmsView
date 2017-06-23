@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="15dp"
-    tools:context="com.ferreira.hallefy.filmsview.activity_details">
+    android:id="@+id/RelativeLayout"
+    tools:context="com.ferreira.hallefy.filmsview.views.activity_details">
 
 
     <ImageView
@@ -67,8 +68,41 @@
         app:layout_constraintLeft_toRightOf="@+id/image_film"
         app:layout_constraintTop_toBottomOf="@+id/tvVoteCount" />
 
+
+    <TextView
+        android:id="@+id/tvPopularidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvReleaseData"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/image_film"
+        android:maxLength="16"
+        android:text="0"
+        app:layout_constraintLeft_toRightOf="@+id/image_film"
+        app:layout_constraintTop_toBottomOf="@+id/tvReleaseData" />
+
     <TextView
         android:id="@+id/tvOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDesc"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textAlignment="textStart"
+        android:textSize="15sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/tvDesc"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDesc" />
+
+    <TextView
+        android:id="@+id/tvDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/image_film"
@@ -77,8 +111,10 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="Descrição:"
         android:textAlignment="textStart"
+        android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="@+id/image_film"
         app:layout_constraintRight_toRightOf="parent"

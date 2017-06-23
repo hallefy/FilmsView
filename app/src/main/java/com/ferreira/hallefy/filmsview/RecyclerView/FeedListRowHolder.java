@@ -10,7 +10,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.ferreira.hallefy.filmsview.R;
-import com.ferreira.hallefy.filmsview.activity_details;
+import com.ferreira.hallefy.filmsview.views.activity_details;
 
 /**
  * Created by HallefyPC on 12/06/2017.
@@ -22,13 +22,7 @@ public class FeedListRowHolder extends RecyclerView.ViewHolder {
     protected ImageView imageFilm;
     Context context;
     protected RelativeLayout relativeLayout;
-    protected int id_filme = 0;
 
-    int posicao;
-
-    public int getPosicao() {
-        return posicao;
-    }
 
     public FeedListRowHolder(View view, final Context context) {
         super(view);
@@ -51,7 +45,6 @@ public class FeedListRowHolder extends RecyclerView.ViewHolder {
 
                 bundle.putInt("id_movie", id);
                 intent.putExtras(bundle);
-
 
                 context.startActivity(intent);
             }

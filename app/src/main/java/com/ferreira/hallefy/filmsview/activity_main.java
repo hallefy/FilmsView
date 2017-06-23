@@ -127,7 +127,6 @@ public class activity_main extends AppCompatActivity {
             }
         });
 
-
     }
 
 

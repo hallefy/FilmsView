@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ferreira.hallefy.filmsview.activity_main">
+    tools:context="com.ferreira.hallefy.filmsview.views.activity_main">
 
 
     <view
@@ -16,5 +16,17 @@
         android:layout_alignParentLeft="true"
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="8dp" />
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="@+id/recycler_view"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="@+id/recycler_view"
+        app:layout_constraintBottom_toBottomOf="@+id/recycler_view"
+        android:layout_marginBottom="8dp" />
 
 </android.support.constraint.ConstraintLayout>

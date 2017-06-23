@@ -61,16 +61,16 @@
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="14sp" />
 
-            <ImageView
+            <TextView
                 android:id="@+id/imgRate"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
                 android:layout_alignBottom="@+id/tvRate"
+                android:layout_alignTop="@+id/tvRate"
                 android:layout_toRightOf="@+id/tvRate"
-                android:background="@android:drawable/btn_star_big_on"
+                android:background="@mipmap/ic_star_rate"
                 android:fontFamily="sans-serif"
-                android:text="TextView"
-                android:textColor="@color/cardview_dark_background"
+                android:text=""
                 android:textSize="14sp" />
 
             <TextView
